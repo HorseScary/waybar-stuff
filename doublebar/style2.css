@@ -7,6 +7,9 @@
 window#waybar {
     background-color: transparent;
 }
+window#waybar.hidden {
+    opacity: 0.2;
+}
 
 .modules-center {
     background-color: rgba(0, 255, 0, .5);
@@ -46,15 +49,18 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background-color: #54a869;
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 rgba(181, 255, 181, 0.5);
+    background: rgba(0,0,0,0.0); 
+    transition-duration: .1s;
+    border-color: transparent;
 }
 
 #workspaces button.focused {
-    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 #fff
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 rgb(200, 255, 200)
     /* background-image: radial-gradient(circle at bottom, #54a869 40%, transparent 20%); */
     /* background-image: radial-gradient(circle at center, rgb(84, 166, 104) 40%, transparent 20%); */
 }
 
 #workspaces button.urgent {
-    background-color: red;
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 rgb(255, 100, 100)
 }
