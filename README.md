@@ -1,3 +1,3 @@
-# Some waybar config stuff
+# Some waybar configs
 
-wanted to mess with waybar stuff
+wanted to mess with waybar
