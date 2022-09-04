@@ -11,10 +11,6 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-#waybar.empty {
-    background: none;
-}
-
 /* Top bar */
 .top-bar .modules-center { 
     background-color: rgba(0, 255, 0, .5);
