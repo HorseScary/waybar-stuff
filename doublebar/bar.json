@@ -1,7 +1,22 @@
-{
+[{
+    "layer": "top",
+    "position": "left",
+    "width": "32",
+
+    "name":"side-bar",
+
+    "modules-center": ["sway/workspaces"],
+
+    "sway/workspaces": {
+        "disable-scroll": true
+    }
+},
+    {
     "layer": "top",
     "position": "top",
     "height": 25,
+
+    "name": "top-bar",
 
     "modules-left": ["disk", "idle_inhibitor", "tray"],
     "modules-center": ["sway/window"],
@@ -69,4 +84,4 @@
             "format-alt": "{time} {icon}",
             "format-icons": ["", "", "", "", ""]
     }
-}
+}]

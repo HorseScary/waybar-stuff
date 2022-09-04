@@ -1,0 +1,116 @@
+* {
+    font-family: FontAwesome, "Fira Code", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Top bar */
+.top-bar .modules-center { 
+    background-color: rgba(0, 255, 0, .5);
+    border-radius: 0 0 10px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.top-bar #window {
+    padding: 0px;
+}
+
+.top-bar #waybar.empty .modules-center {
+    background: none;
+}
+
+.top-bar .modules-right {
+    background-color: rgba(0, 255, 0, .5);
+    border-radius: 0 0 0 10px;
+}
+
+.top-bar #memory,
+#backlight,
+#network,
+#battery,
+#clock {
+    box-shadow: inset 1px 0 0 rgba(181, 255, 181, 0.5);
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.top-bar #cpu {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.top-bar .modules-left {
+    background-color: rgba(0, 255, 0, .5);
+    border-radius: 0 0 10px 0;
+}
+
+.top-bar #disk,
+#idle_inhibitor,
+#tray {
+    box-shadow: -1px 0 0 rgba(181, 255, 181, 0.5);
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+
+/* Side bar */
+.side-bar .modules-center {
+    background-color: rgba(0, 255, 0, .5);
+    border-radius: 0 10px 10px 0;
+}
+
+.side-bar #workspaces button {
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 0;
+
+    color: #fff;
+    background-color: transparent;
+
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5)
+}
+
+.side-bar #workspaces button#sway-workspace-hell {
+    padding-left: 4px;
+    padding-right: 0px;
+    padding-top: 6px;
+
+    font-size: small;
+}
+
+.side-bar #workspaces button:first-child {
+    border-radius: 0;
+    border-top-right-radius: 10px;
+}
+
+.side-bar #workspaces button:last-child {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.side-bar #workspaces button:hover {
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 rgba(181, 255, 181, 0.5);
+    background: rgba(0,0,0,0.0); 
+    transition-duration: .1s;
+    border-color: transparent;
+}
+
+.side-bar #workspaces button.focused {
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 rgb(200, 255, 200)
+}
+
+.side-bar #workspaces button:first-child.focused {
+    box-shadow: inset 3px 0 0 rgb(200, 255, 200)
+}
+
+.side-bar #workspaces button.urgent {
+    box-shadow: 0 -1px 0 rgba(181, 255, 181, 0.5), inset 3px 0 0 rgb(255, 100, 100)
+}
